@@ -5,3 +5,18 @@ body{
     margin: 0rem;
     overflow: hidden;
 }
+#image{
+    height: 30vmin;
+    width: 30vmin;
+    object-fit: cover;
+    object-position: center;
+
+}
+.track{
+    display: flex;
+    gap: 4vmin;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(0%, -50%);
+}
