@@ -13,7 +13,7 @@ const handleOnMove = e => {
   const mouseDelta = parseFloat(track.dataset.mouseDownAt) - e.clientX,
         maxDelta = window.innerWidth / 2;
   
-  const percentage = (mouseDelta / maxDelta) * -100,
+  const percentage = (mouseDelta / maxDelta) * 100,
         nextPercentageUnconstrained = parseFloat(track.dataset.prevPercentage) + percentage,
         nextPercentage = Math.max(Math.min(nextPercentageUnconstrained, 0), -100);
   
